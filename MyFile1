@@ -1,0 +1,20 @@
+pipeline{
+        agent any
+        stages{
+                stage("Cleaning Stage") {
+                        steps{ 
+                              echo "Cleaning Stage"
+                              }
+                  }
+                  stage("Testing Stage") {
+                        steps{
+                              echo "Testing Stage"
+                              }
+                   }
+                   stage("Packaging Stage") {
+                          steps{
+                              echo "Packaging Stage"
+                              }
+                      }
+               }
+         }
