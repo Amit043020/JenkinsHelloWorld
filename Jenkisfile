@@ -1,0 +1,20 @@
+pipeline{
+        agent any
+        stages{
+                stage("Cleaning Stage") {
+                        steps{ 
+                              bat "dir"
+                              }
+                  }
+                  stage("Testing Stage") {
+                        steps{
+                              bat "date"
+                              }
+                   }
+                   stage("Packaging Stage") {
+                          steps{
+                              bat "dir"
+                              }
+                      }
+               }
+         }
