@@ -1,22 +1,22 @@
 pipeline{
         agent any
         stages{
-                stage("Cleaning Stage") {
+                stage("Cleaning Stage - HELP") {
                         steps{ 
                               echo "Cleaning Stage"
-                              bat "mvn clean"
+                              bat "mvn -help"
                               }
                   }
-                  stage("Testing Stage") {
+                  stage("Testing Stage - Version") {
                         steps{
                               echo "Testing Stage"
-                              bat "mvn test"
+                              bat "mvn -version"
                               }
                    }
-                   stage("Packaging Stage") {
+                   stage("Packaging Stage - BATCH TREE") {
                           steps{
                               echo "Packaging Stage"
-                              bat "mvn package"
+                              bat "tree"
                               }
                       }
                    stage ("Consolidate Results") {
