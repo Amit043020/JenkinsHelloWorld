@@ -3,17 +3,17 @@ pipeline{
         stages{
                 stage("Cleaning Stage") {
                         steps{ 
-                              bat "dir"
+                              echo "Cleaning Stage"
                               }
                   }
                   stage("Testing Stage") {
                         steps{
-                              bat "date"
+                              echo "Testing Stage"
                               }
                    }
                    stage("Packaging Stage") {
                           steps{
-                              bat "dir"
+                              echo "Packaging Stage"
                               }
                       }
                }
